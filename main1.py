@@ -101,7 +101,7 @@ class Window(arcade.Window):
         self.particle_list.update()
         if self.mouse_down:
             #generate a new particle
-            x = self.x + random.uniform(PARTICLE_MIN_X, PARTICLE_MAX_X)
+            x = self.x + random.uniform(-100, 100 )
             y = self.y
             dx = PARTICLE_VELOCITY_X
             dy = PARTICLE_VELOCITY_Y
@@ -110,7 +110,7 @@ class Window(arcade.Window):
             decay = random.uniform(PARTICLE_MIN_DECAY,PARTICLE_MAX_DECAY)
             scale = random.uniform(PARTICLE_MIN_SCALE,PARTICLE_MAX_SCALE)
             #Particle(asset, sprite scale, initial position [x], initial position [y], velocity [x], velocity [y], acceleration [x], acceleration [y], scale decay)
-            particle = Particle('circle_05',scale,x,y,dx,dy,ax,ay,decay)
+            particle = Particle('rain',0.02,x,y,1,-5,0,-1.5,random.uniform(0,0.15))
 
             self.particle_list.append(particle)
 
