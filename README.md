@@ -1,4 +1,7 @@
 # E07a-Particles
+This excercise gave me practice with using particles, decay/lifespan, changes in size of particles, color, velocity, and acceleration. I made my own rain particle using an online pixel art application. This excercise also introducted me to random.uniform(a,b) which allows one to select a random decimal value between two integers or floats. This is quite useful and make me wonder if I can change the steps (start, stop, step) with which random.uniform generates numbers. This excercise was really fun and I will be going back and working with other particle emmiters very soon!
+
+
 Playing with particles and emitters
 
 This is an opportunity for you to play with some particles. As you hold down the mouse button, particles are generated and appended to self.particle_list. You will have the opportunity to play with the parameters for generating the particles to explore different effects.
